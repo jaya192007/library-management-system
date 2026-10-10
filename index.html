@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Library Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>☁️ Cloud Library Management</h1>
+        <p>Manage Your Books Easily</p>
+    </header>
+
+    <div class="container">
+        <h2>Add New Book</h2>
+
+        <input type="text" id="bookName" placeholder="Enter Book Name">
+        <input type="text" id="author" placeholder="Enter Author Name">
+
+        <button onclick="addBook()">Add Book</button>
+
+        <h2>Available Books</h2>
+        <input type="text" id="search" placeholder="Search books..."
+               oninput="displayBooks()">
+
+        <ul id="bookList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

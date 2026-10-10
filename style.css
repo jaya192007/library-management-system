@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        #c084fc,
+        #a855f7,
+        #7c3aed,
+        #5b21b6
+    );
+    color: #202044;
+}
+
+/* Header */
+header {
+    text-align: center;
+    color: white;
+    padding: 25px 10px 35px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 17px;
+    color: #f3e8ff;
+}
+
+/* Main container */
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(40, 0, 80, 0.25);
+}
+
+/* Headings */
+h2 {
+    color: #6d28d9;
+    font-size: 23px;
+    margin: 15px 0;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 8px 0 12px;
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #faf8ff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px #8b5cf633;
+    background: white;
+}
+
+/* Add button */
+button {
+    background: linear-gradient(135deg, #9333ea, #6d28d9);
+    color: white;
+    padding: 13px 23px;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #7e22ce, #5b21b6);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px #7c3aed40;
+}
+
+/* Search box */
+#search {
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+/* Book list */
+#bookList {
+    list-style: none;
+    margin-top: 12px;
+}
+
+#bookList li {
+    background: linear-gradient(100deg, #f3e8ff, #f5f3ff);
+    border-left: 5px solid #8b5cf6;
+    padding: 17px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #6d28d90d;
+    line-height: 1.8;
+    overflow: auto;
+    overflow-wrap: anywhere;
+    transition: 0.3s;
+}
+
+#bookList li:hover {
+    background: #ede9fe;
+    transform: translateX(4px);
+}
+
+/* Delete button */
+#bookList .delete {
+    background: #e11d48;
+    float: right;
+    padding: 9px 15px;
+    font-size: 13px;
+}
+
+#bookList .delete:hover {
+    background: #be123c;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    #bookList .delete {
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+}
